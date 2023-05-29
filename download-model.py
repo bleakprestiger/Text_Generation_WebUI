@@ -62,12 +62,15 @@ EleutherAI/pythia-1.4b-deduped
 """)
 
         print("Input> ", end='')
-        model = input()
+        #model = input()
+        model = 'L'
         branch = "main"
     else:
         arr = models[choices[choice]]
-        model = f"{arr[0]}/{arr[1]}"
-        branch = arr[2]
+        model = f"Bleak/ggml-vicuna-13b-4bit-rev1"
+        branch = "main"
+        #model = f"{arr[0]}/{arr[1]}"
+        #branch = arr[2]
 
     return model, branch
 
