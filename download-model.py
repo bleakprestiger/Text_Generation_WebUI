@@ -33,6 +33,7 @@ def select_model_from_default_options():
         "Pythia-2.8B-deduped": ("EleutherAI", "pythia-2.8b-deduped", "main"),
         "Pythia-1.4B-deduped": ("EleutherAI", "pythia-1.4b-deduped", "main"),
         "Pythia-410M-deduped": ("EleutherAI", "pythia-410m-deduped", "main"),
+        "ggml-vicuna-13b-4bit-rev1": ("Bleak", "ggml-vicuna-13b-4bit-rev1", "main"),
     }
 
     choices = {}
@@ -48,7 +49,8 @@ def select_model_from_default_options():
     print(f"{char_exit}) Do not download a model")
     print()
     print("Input> ", end='')
-    choice = input()[0].strip().upper()
+    #choice = input()[0].strip().upper()
+    choice = 'L'
     if choice == char_exit:
         exit()
     elif choice == char_hugging:
